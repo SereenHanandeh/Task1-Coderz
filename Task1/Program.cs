@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Enter Type of Client: ");
+﻿Console.WriteLine("************* Welcome To Our Program *************");
+
+Console.WriteLine("- Enter Type of Client: ");
 string clientType=Console.ReadLine().ToLower();
 
 double discount = 0, extraDiscount = 0, totalDiscount, finalAmount;
@@ -9,7 +11,7 @@ if (clientType != "gold" && clientType != "silver" && clientType != "regular")
 }
 else
 {
-    Console.WriteLine("Enter the Amount of Bill: ");
+    Console.WriteLine("- Enter the Amount of Bill: ");
     double bill = Convert.ToDouble(Console.ReadLine());
 
     if (clientType == "gold")
@@ -45,9 +47,14 @@ else
     totalDiscount = bill * (discount + extraDiscount);
     finalAmount = bill - totalDiscount;
 
-    Console.WriteLine($" Discount= {discount} JD");
-    Console.WriteLine($"Total Discount= {totalDiscount} JD");
-    Console.WriteLine($"Final Amount= {finalAmount} JD");
+    Console.WriteLine("- Results:");
+
+    Console.WriteLine($"> Discount= {discount} JD");
+    Console.WriteLine($"> Total Discount= {totalDiscount} JD");
+    Console.WriteLine($"> Final Amount= {finalAmount} JD");
+
+    Console.WriteLine("**** Thank You ****");
+
 
 }
 
