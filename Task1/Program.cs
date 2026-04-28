@@ -41,12 +41,11 @@ else
         }
 
     }
- 
+    
     totalDiscount = bill * (discount + extraDiscount);
     finalAmount = bill - totalDiscount;
 
-    Console.WriteLine($"Discount= {discount} JD");
-    Console.WriteLine($"Extra Discount= {extraDiscount} JD");
+    Console.WriteLine($" Discount= {discount} JD");
     Console.WriteLine($"Total Discount= {totalDiscount} JD");
     Console.WriteLine($"Final Amount= {finalAmount} JD");
 
